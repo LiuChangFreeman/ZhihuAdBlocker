@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<service>
+  <id>BlockZhihuAd</id>
+  <name>BlockZhihuAd</name>
+  <description>BlockZhihuAd</description>
+  <executable>C:/Program Files (x86)/mitmproxy/bin/mitmdump.exe</executable>
+  <startargument>-s</startargument>
+  <startargument>%BASE%\block_zhihu_ad.py</startargument>
+  <startargument>-q</startargument>
+  <startargument>-p</startargument>
+  <startargument>8889</startargument>
+  <logpath>%BASE%\logs</logpath>
+  <logmode>roll</logmode>  
+</service>

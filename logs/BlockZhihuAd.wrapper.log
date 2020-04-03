@@ -1,0 +1,14 @@
+2020-04-03 23:21:25,171 DEBUG - Starting ServiceWrapper in the CLI mode
+2020-04-03 23:21:25,528 INFO  - Installing the service with id 'BlockZhihuAd'
+2020-04-03 23:21:25,530 FATAL - Unhandled exception
+System.Exception: Installation failure: Service with id 'BlockZhihuAd' already exists
+   在 winsw.WrapperService.Run(String[] _args, ServiceDescriptor descriptor)
+   在 winsw.WrapperService.Main(String[] args)
+2020-04-03 23:21:25,637 DEBUG - Starting ServiceWrapper in the CLI mode
+2020-04-03 23:21:25,941 INFO  - Starting the service with id 'BlockZhihuAd'
+2020-04-03 23:21:25,954 FATAL - WMI Operation failure: ServiceAlreadyRunning
+WMI.WmiException: ServiceAlreadyRunning
+   在 WMI.WmiRoot.BaseHandler.CheckError(ManagementBaseObject result)
+   在 WMI.WmiRoot.InstanceHandler.Invoke(Object proxy, MethodInfo method, Object[] args)
+   在 winsw.WrapperService.Run(String[] _args, ServiceDescriptor descriptor)
+   在 winsw.WrapperService.Main(String[] args)

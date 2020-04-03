@@ -1,0 +1,1 @@
+/usr/local/bin/mitmdump -s /home/block_zhihu_ad.py -p 8889 -q

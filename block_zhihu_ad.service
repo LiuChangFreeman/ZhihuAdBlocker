@@ -1,0 +1,12 @@
+[Unit]
+Description=mitmdump
+After=syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/mitmdump -s /home/block_zhihu_ad/block_zhihu_ad.py -p 8889 -q
+Restart=always
+Type=simple
+StartLimitInterval=1sec
+
+[Install]
+WantedBy=multi-user.target
