@@ -6,9 +6,9 @@ import datetime
     
 disable_ads=True
 #过滤广告
-disable_videos=True
+disable_videos=False
 #过滤视频卡片
-disable_answers_with_video=True
+disable_answers_with_video=False
 #过滤带有视频的回答卡片
 
 server_address_watch=["client-api.itunes.apple.com","api.zhihu.com"]
