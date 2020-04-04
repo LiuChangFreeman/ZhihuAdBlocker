@@ -26,7 +26,7 @@ docker run -it --name block_zhihu_ad -p 9999:8889  --restart=always -d block_zhi
 ```
 您可以将9999修改为任何可用的端口号
 ## 2、使用systemd创建linux服务
-需自行安装安装python3与mitmproxy,并将block_zhihu_ad.py放置到
+需您自行安装python3与mitmproxy,并将block_zhihu_ad.py放置到
 **/home/block_zhihu_ad/block_zhihu_ad.py**
 ```bash
 cp block_zhihu_ad.service /etc/systemd/system/block_zhihu_ad.service
@@ -50,7 +50,7 @@ StartLimitInterval=1sec
 WantedBy=multi-user.target
 ```
 ## 3、使用winsw创建windows服务
-需自行安装windows版mitmproxy到  
+需自行安装windows版mitmproxy([下载链接](https://www.mitmproxy.org/))到此目录:  
 **C:/Program Files (x86)/mitmproxy/**
 ```cmd
 BlockZhihuAd install 
